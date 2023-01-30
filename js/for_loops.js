@@ -1,9 +1,10 @@
 "use strict";
 
-function showMultiplicationTable(Num){
+function showMultiplicationTable(Number){
     for(var i = 1; i <= 10; i++){
-        console.log("these are the numbers " + (Num * i));
+        console.log(Number + " x " + 1 + " = " + (Number* i));
     }
+    showMultiplicationTable(7)
 }
 
 for(var i = 1; i <=10; i++){
@@ -13,6 +14,22 @@ for(var i = 1; i <=10; i++){
     } else{
         console.log("its Odd" + random);
     }
+}
+
+for(var i = 1; i <=9; i++) {
+    var iString = "";
+    for(var n=1; n=i; n++) {
+        iString +=i;
+    }
+    console.log(iString);
+}
+
+for(var i=1; i<=9; i++) {
+    console.log(i.iString().repeat(i))
+}
+
+for(var i=100; i>=5; i=1-5) {
+    console.log(i);
 }
 
 
