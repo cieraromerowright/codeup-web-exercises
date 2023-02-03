@@ -11,6 +11,13 @@
  *  > console.log(person.lastName) // "Sanchez"
  */
 
+var person = {
+    firstName: "Ciera",
+    lastName: "RomeroWright",
+}
+console.log(person.firstName);
+console.log(person.lastName);
+
 /**
  * TODO:
  * Add a sayHello method to the person object that returns a greeting using
@@ -20,6 +27,17 @@
  * Example
  * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
  */
+
+person.sayHello = function () {
+    console.log("Hello from" + this.firstName + " " + this.lastName + "!");
+
+    person.sayHello();
+    console.log(person);
+};
+
+
+
+
 
 /** TODO:
  * HEB has an offer for the shoppers that buy products amounting to
@@ -35,11 +53,23 @@
  * and console.log the relevant messages for each person
  */
 
-// var shoppers = [
-//     {name: 'Cameron', amount: 180},
-//     {name: 'Ryan', amount: 250},
-//     {name: 'George', amount: 320}
-// ];
+
+
+ var shoppers = [
+     {name: 'Cameron', amount: 180},
+     {name: 'Ryan', amount: 250},
+    {name: 'George', amount: 320}
+];
+ function shopperDiscount (shoppers) {
+     shoppers.forEach(function(shopper));{
+         var shopperDiscount = shoppers.amount - (shoppers.amount*.12)
+         if (shoppers.amount <=200){
+             console.log(shoppers.name + "Your Total" + shoppers.amount)
+         }else
+             console.log(shoppers.name + "YourTotal before discount $" + shoppers.amount + "after your 12% discount your total is" + shopperDiscount)
+     }));
+     };
+
 
 /** TODO:
  * Create an array of objects that represent books and store it in a
@@ -53,6 +83,21 @@
  * > console.log(books[0].author.firstName) // "Douglas"
  * > console.log(books[0].author.lastName) // "Adams"
  */
+
+var books = [
+    {title:'Cat in the hat', author{firstName:'Dr', lastName:'Seuss'}},
+    {title:'If you give a mouse a cookie', author{firstName: 'Laura', lastName:'Numerous'}},
+    {title: 'Miss nelson is missing', author{firstname:'Harry', lastName:'Allard' }},
+    {title: 'Rainbow Fish', author{firstName:'Marcus', lastName:'Pfister'}},
+    {title:'Where the wild things are', author{firsName:'Maurice', lastName:'Sendak' }},
+]
+
+books.foreach(function(book,index)); {
+    console.log("Book # " + index);
+    console.log("Title:" + books.title );
+    console.log("Author" + books.author.firstName + " " + books.author.lastName);
+}
+
 
 /**
  * TODO:
@@ -90,4 +135,4 @@
  *   `showBookInfo` function.
  */
 
-})();
+
