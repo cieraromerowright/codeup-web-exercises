@@ -57,9 +57,20 @@ console.log(names[3]);
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+    function first(x) {
+        return x[0];
+    }
 
-    var array = [];
-    console.log([0]);
-    console.log([1]);
-    console.log([2]);
+    console.log(first(names));
+
+    function second(array){
+        return x[1];
+    }
+    console.log(second(names));
+
+    function last(array){
+        return array[array.length-1];
+    }
+
+
 })();
