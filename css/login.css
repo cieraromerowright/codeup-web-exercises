@@ -67,6 +67,10 @@ fieldset {
 }
 
 .form-control {
+    element {height: 4px; }
+    padding-top:.5em;
+    padding-bottom: .5em;
+    width: calc(100%-4px);
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
 
