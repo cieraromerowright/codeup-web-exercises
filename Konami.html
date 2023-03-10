@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="js/JQuery.JS.js"></script>
+<script>
+  "use strict";
+  var konamiCode = '3838404037393739666513'
+  var userInput=""
+  $(document).keyup(function(event){
+    console.log(event.keyCode);
+    userInput+= event.keyCode;
+    console.log(userInput);
+    if(userInput === konamiCode){
+      alert('You have added 30 lives!');
+    }
+  });
+</script>
+</body>
+</html>
