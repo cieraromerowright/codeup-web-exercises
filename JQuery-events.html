@@ -9,15 +9,19 @@
 <div>
     <h1>Chocolate World</h1>
 
-    <p class="codeup">chocolate is good</pclass>
-    <ul class="codeup">
-        <li class="codeup">milk chocolate</li>
+    <p>chocolate is good</pclass>
+    <ul>
+        <li>milk chocolate</li>
         <li >dark chocolate</li>
         <li >white chocolate</li>
     </ul>
 </div>
 <script>
-    $('.codeup').css('border', '1px solid #FF0000');
+    $('li').css('font-size', '20px')
+    $('h1','p','li')
+    var chocolateworld = $('h1').html();
+    alert(chocolateworld)
+    // $('.codeup').css('border', '1px solid #FF0000');
 
     // var chocolate = $('#leastfavorite').html();
     // alert(chocolate)
